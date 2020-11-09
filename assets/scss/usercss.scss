@@ -1,0 +1,94 @@
+@import './variables';
+body
+{
+    background-image: url('backimage.jpg');
+}
+#profileBodySection
+{
+    // border: 2px solid black;
+    width:50%;
+    border-radius:20px;
+    background-color: inherit;
+    position: relative;
+    left:23%;
+    top: 12%;
+   
+    height: auto;
+    display: flex;
+    // width: auto;
+    color: white;
+    font-size: $size;
+    #updateFormBox
+    {
+        overflow: scroll;
+        height: 400px;
+    }
+    .formBox
+    {
+        margin-left: 50px;
+    }
+    .UpdateForm
+    {
+        margin-bottom: 20px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .UpdateForm input
+    {
+        background-color: inherit;
+        color: white;
+        border:0px;
+    }
+    #updateFormBox
+    {
+        display: inline-block;
+    }
+
+#imgBox 
+{
+    display: inline-block;
+    img
+    {
+        position: relative;
+        left: 4%;
+        border-radius: 20px;
+        height: 400px;
+        width: 350px;
+        display: inline-block;
+    }
+}
+}
+
+#home-container
+{
+    color: white;
+    position: relative;
+    left: 40%;
+    top:14%;
+
+}
+
+#imgbox2
+{
+    display: flex;
+}
+#box1
+{
+    position: relative;
+    left: -30%;
+}
+#box2{
+    position: relative;
+    left:-3%;
+}
+
+#conBox
+{
+    position: absolute;
+    left: 60%;
+    overflow: scroll;
+    height: 400px;
+}

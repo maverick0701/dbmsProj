@@ -1,0 +1,62 @@
+body {
+  background-image: url("backimage.jpg"); }
+
+#profileBodySection {
+  width: 50%;
+  border-radius: 20px;
+  background-color: inherit;
+  position: relative;
+  left: 23%;
+  top: 12%;
+  height: auto;
+  display: flex;
+  color: white;
+  font-size: 30px; }
+  #profileBodySection #updateFormBox {
+    overflow: scroll;
+    height: 400px; }
+  #profileBodySection .formBox {
+    margin-left: 50px; }
+  #profileBodySection .UpdateForm {
+    margin-bottom: 20px; }
+    #profileBodySection .UpdateForm a {
+      color: white;
+      text-decoration: none; }
+  #profileBodySection .UpdateForm input {
+    background-color: inherit;
+    color: white;
+    border: 0px; }
+  #profileBodySection #updateFormBox {
+    display: inline-block; }
+  #profileBodySection #imgBox {
+    display: inline-block; }
+    #profileBodySection #imgBox img {
+      position: relative;
+      left: 4%;
+      border-radius: 20px;
+      height: 400px;
+      width: 350px;
+      display: inline-block; }
+
+#home-container {
+  color: white;
+  position: relative;
+  left: 40%;
+  top: 14%; }
+
+#imgbox2 {
+  display: flex; }
+
+#box1 {
+  position: relative;
+  left: -30%; }
+
+#box2 {
+  position: relative;
+  left: -3%; }
+
+#conBox {
+  position: absolute;
+  left: 60%;
+  overflow: scroll;
+  height: 400px; }

@@ -1,0 +1,100 @@
+#coursel {
+  height: 500px;
+  width: 60%;
+  margin: auto;
+  transform-style: preserve-3d;
+  position: relative;
+  perspective: 2000px;
+  position: relative;
+  box-sizing: border-box; }
+
+/*face class is used to give style to each face or container in the carousel*/
+.face {
+  width: 55%;
+  height: 200px; }
+
+/*this gives styling to the center div present in the carousel*/
+#center {
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  background-image: url("mainImage.jpg");
+  background-size: cover;
+  background-position-y: center;
+  z-index: 3;
+  box-shadow: 2px 2px 10px 10px black;
+  transition: 1s ease-in-out; }
+
+/*this gives styling to the left div present in the carousel*/
+#left {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  background-image: url("left.jpeg");
+  background-size: contain;
+  z-index: 3;
+  box-shadow: 2px 2px 10px 10px black;
+  transition: 1s ease-in-out;
+  transform: translateZ(-100px); }
+
+/*this gives styling to the right div present in the carousel*/
+#right {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  z-index: 3;
+  background-image: url("download.jpeg");
+  background-size: cover;
+  transform: translateZ(-100px);
+  box-shadow: 2px 2px 10px 10px black;
+  transition: 1s ease-in-out; }
+
+#left:hover {
+  perspective: 100px;
+  transform: translateZ(100px); }
+
+#right:hover {
+  perspective: 100px;
+  transform: translateZ(100px); }
+
+#center:hover {
+  transform: translateZ(200px); }
+
+#searchButton {
+  color: white;
+  margin-top: -100px; }
+
+#searchResult {
+  margin: auto;
+  color: wheat;
+  width: 50%; }
+
+#box1 {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  color: wheat;
+  width: 800px;
+  flex-wrap: wrap; }
+  #box1 .box1box {
+    margin-left: 50px;
+    transition: 1s ease-in-out; }
+    #box1 .box1box .con {
+      width: 180px;
+      overflow: scroll; }
+
+center {
+  color: white; }
+
+#box2 {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  color: wheat;
+  width: 800px;
+  flex-wrap: wrap; }
+  #box2 .box1box {
+    margin-left: 50px; }
+    #box2 .box1box .con {
+      width: 180px;
+      overflow: scroll; }

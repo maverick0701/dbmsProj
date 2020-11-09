@@ -1,0 +1,51 @@
+body {
+  margin: 0px;
+  background-image: url("formback.jpeg");
+  background-size: cover; }
+
+.addBack1 {
+  background-image: url("./image/sample5.jpg");
+  background-size: cover; }
+
+.addBack2 {
+  background-image: url("./image/sample5-NS-Encrypted.png");
+  background-size: cover; }
+
+.addBack3 {
+  background-image: url("./image/sample5-AES-Encrypt.png");
+  background-size: cover; }
+
+.addBack4 {
+  background-image: url("./image/sample5-OTP-Encrypted.PNG");
+  background-size: cover; }
+
+.addBack21 {
+  background-image: url("./image/image2/sample4.jpg"); }
+
+.addBack22 {
+  background-image: url("./image/image2/sample4encrypted.PNG");
+  background-size: cover; }
+
+.addBack31 {
+  background-image: url("./image/image3/sample3.jpg");
+  background-size: cover; }
+
+.addBack32 {
+  background-image: url("./image/image3/sample3encrypted.PNG");
+  background-size: cover; }
+
+.addBack41 {
+  background-image: url("./image/image4/sample2.jpg");
+  background-size: cover; }
+
+.addBack42 {
+  background-image: url("./image/image4/sample2encrypted.PNG");
+  background-size: cover; }
+
+.addBack51 {
+  background-image: url("./image/image5/sample.jpg");
+  background-size: cover; }
+
+.addBack52 {
+  background-image: url("./image/image5/sampleencrypted.PNG");
+  background-size: cover; }

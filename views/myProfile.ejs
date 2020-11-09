@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="/css/usercss.css">
+<link rel="stylesheet" href="/css/chat_box.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<div id="profileBodySection">
+    <div id='imgBox'> 
+        <img src="<%=profile_user.avatar%>" alt="<%=profile_user.name%>" height="200px" width="200px"> 
+        </div>
+<%if(profile_user.id==user.id){%>
+    <div id='updateFormBox'>
+    <form action="/users/update/<%=profile_user.id%>" method="POST" enctype="multipart/form-data">
+        <div class="formBox">
+            <div class="UpdateForm">
+            <label>Name</label><br>
+            <input type="text" name="name" value="<%=profile_user.name%>" required><br>
+            </div>
+            <div class="UpdateForm">
+            <label>Email</label><br>
+            <input type="text" name="email" value="<%=profile_user.email%>" required><br>
+            </div>
+            <!-- <div class="UpdateForm">
+                <small><label> My Trainer: <br><%=profile_user.TrainerName%></label><br></small>
+            </div>
+            <div class="UpdateForm">
+                <small><label> My Nutrionist: <br><%=profile_user.Nutname%></label><br></small>
+            </div>
+            <%if(user.userType=='trainer'){%>
+                <div class="UpdateForm">
+                    <label>Consultaion Cost</label><br>
+                    <input type="text" name="cost" value="<%=myTrainer.cost%>" required><br>
+                    </div>
+             <%}%> 
+             <%if(user.userType=='nutrionist'){%>
+                <div class="UpdateForm">
+                    <label>Consultaion Cost</label><br>
+                    <input type="text" name="cost" value="<%=nut.cost%>" required><br>
+                    </div>
+                
+             <%}%>   -->
+        <div class="UpdateForm">
+            <label>Upload the Photo</label><br>
+            <input type="file" name="avatar" placeholder="profile Picture"><br>
+            </div>
+            <input type="submit" value="Upload">
+        </div>
+    </form>
+
+</div>
+
+
+
+<%}else{%>
+    <div id='conBox'>
+    
+    <div>
+        Name: <br><%=profile_user.name%><br><br>
+        Email:<br><%=profile_user.email%><br><br>Profession:<br><%=profile_user.userType%><br><br>Charges:<br><%=myTrainer.cost%><br><br>
+    </div>
+    <small>
+        <% if (locals.user){ %>
+            <a class="toggle-like-button" data-likes="<%= profile_user.likes.length %>" href="/likes/toggle/?id=<%=profile_user._id%>">
+                    <%= profile_user.likes.length %> <i class="fas fa-thumbs-up"></i>
+            </a>
+        <% }else{ %>
+            <%= profile_user.likes.length %> <i class="fas fa-thumbs-up"></i>
+        <% } %>
+      
+    </small><br><br>
+
+    <form action="/users/connect/<%=user.id%>" method="POST">
+        <input type="text" value="<%=profile_user.id%>" name='profileId' hidden>
+        <input type="text" value="<%=profile_user.userType%>" name='type' hidden>
+        <button type="submit">connect</button>
+    </form>
+    </div>
+    <%}%>
+</div>
+
+<%- include('_chatbox') -%>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script src="/js/chat_engine.js"></script>
+
+<%if(locals.user){%>
+    <script>
+        new ChatEngine('user-chat-box','<%=locals.user.email%>')
+    </script>
+<%}%>
+
+

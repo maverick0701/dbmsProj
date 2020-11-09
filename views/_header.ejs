@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/header.css">
+        <header>
+            <div id="tittle">
+                <h1><a href="/users/profile">Buzz Konnect</a></h1>
+               
+            </div>
+            <div id="nav">
+                <ul>
+                    <% if (locals.user){%>
+                        <li>
+                            <!-- <form action="/users/find" method="POST">
+                                <input type="text" name="search" placeholder="find ur partner">
+                                <button type="submit">Submit</button>
+                            </form> -->
+                        </li>
+                        <li><a href="/users/myProfile/<%=user.id%>"><%=user.name%></a></li>
+                        <li>
+                            <a href="/users/signout">Signout</a>
+                        </li>
+                        
+
+                    <%}else{%>
+                        <li><a href="/">Sign Up</a></li>
+                        <li><a href="/">Sign in</a></li>
+                        <%}%>
+                </ul>
+            </div>
+        </header>
+    

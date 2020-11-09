@@ -1,0 +1,68 @@
+<!-- <link rel="stylesheet" href="/css/home.css">
+<div id="coursel">
+    <div id="left" class="face">
+        
+    </div>
+    <a href=""><div id="center" class="face">
+
+    </div></a>
+    <div id="right" class="face">
+        
+    </div>
+
+</div>
+<div id='searchButton'>
+    <center><h1>Get Intersting Facts here</h1></center>
+            <div id='searchResult'><p><%=detail%></p></div>
+</div>
+<center><h1>Our Top Trainers</h1></center><br>
+
+
+<div id='box1'>
+    
+    <%for(let t of trainerUser){%>
+    <div class='box1box'>
+        <div class='img'>
+            <a href="/users/myProfile/<%=t.id%>"><img src="<%=t.avatar%>" alt="t.name" height="300px" width="200px"></a>
+        </div>
+        <div class="con">
+            Name: <%= t.name%><br>
+            Email: <%= t.email%>
+        </div>
+        
+        
+
+    </div>
+        <%}%>
+        <form action="/users/food/detail" method="POST">
+            <input type="text" name="foodName">
+           
+            <textarea name="foodDetail" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form> -->
+
+        
+<!-- </div>
+<center><h1>Our Top Nutrionist</h1></center>
+<div id='box2'>
+    
+    <%for(let n of nutri){%>
+    <div class="box1box">
+        <div class='img'>
+            <a href="/users/myProfile/<%=n.id%>"><img src="<%=n.avatar%>" alt="t.name" height="300px" width="200px"></a>
+        </div>
+        <div class="con">
+            Name: <%= n.name%><br>
+            Email: <%= n.email%>
+        </div>
+        
+        
+
+    </div>
+        <%}%>
+
+        
+        
+</div>
+ --> 
+<!-- <%- include('_chatbox') -%> -->

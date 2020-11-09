@@ -1,0 +1,49 @@
+#encryptionBox {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  background-size: contain;
+  border-radius: 30px;
+  position: absolute;
+  top: 14%;
+  left: 10%; }
+
+#encryptionBox2 {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  background-size: contain;
+  border-radius: 30px;
+  position: absolute;
+  top: 14%;
+  left: 37%; }
+
+#encryptionBox3 {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  background-size: contain;
+  border-radius: 30px;
+  position: absolute;
+  top: 14%;
+  left: 65%; }
+
+#encryptionBox4 {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  background-size: contain;
+  border-radius: 30px;
+  position: absolute;
+  top: 57%;
+  left: 22%; }
+
+#encryptionBox5 {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  background-size: contain;
+  border-radius: 30px;
+  position: absolute;
+  top: 57%;
+  left: 53%; }

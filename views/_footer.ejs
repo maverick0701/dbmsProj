@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/css/footer.css">
+
+<footer>
+    <div class="footercon" id="one">
+        <% if (locals.user){%>
+            <a href="/users/myProfile/<%=user.id%>">My Profile</a>
+            <a href="/users/profile">Home</a>
+        <%}%>
+        
+    </div>
+</footer>
