@@ -5,7 +5,7 @@ const User=require('../models/mongoose');
 module.exports.toggleLike = async function(req, res){
     try{
 
-        // likes/toggle/?id=abcdef&type=Post
+        //git s lssssikes/toggle/?id=abcdef&type=Post
         let likeable;
         let deleted = false;
         likeable = await User.findById(req.query.id).populate('likes');
