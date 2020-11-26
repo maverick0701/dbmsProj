@@ -4,9 +4,9 @@ const crypto=require('crypto');
 const User=require('../models/mongoose');
 
 passport.use(new googleStrategy({
-    clientID:'551794708074-8vkpe95uvgb609aqvm43pd2utdlsca6j.apps.googleusercontent.com',
-    clientSecret:'X5V55SMa_hP6xfe-BIhS0qkB',
-    callbackURL:'http://localhost:8030/users/auth/google/callback'
+    clientID:,
+    clientSecret:,
+    callbackURL:
 },
     function(accessToken,refreshToken,profile,done)
     {
